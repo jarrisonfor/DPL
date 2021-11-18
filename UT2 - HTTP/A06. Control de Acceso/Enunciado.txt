@@ -1,0 +1,14 @@
+Estudia el comportamiento de order, allow y deny
+Comprueba el control de acceso del directorio DocumentRoot en el host virtual default.
+
+Crea un directorio en en el DocuementRoot de un host virtual, que no sea accesible desde una IP concreta.
+
+Modifica el control de acceso para que sólo se pueda entrar al directorio prohibido desde tu equipo (utilizar el nombre del host).
+
+Realiza los puntos anteriores con la directiva require
+
+Impedir el acceso al directorio si usas el Mozilla Firefox
+
+Mostrar una página si se accede con la url www.loquesea.com y otra distinta si se hace con loquesea.com
+
+Se podrían aplicar estas directivas sin modificar  el fichero de configuración del Virtualhost (ni en el apache2.conf). Razona y demuestra tu respuesta.
