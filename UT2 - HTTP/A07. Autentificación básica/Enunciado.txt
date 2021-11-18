@@ -1,0 +1,11 @@
+Actividad 7. Autentificación básica
+El método de autentificación básica se indica en la directiva AuthType. En Directory escribimos el directorio a proteger, que puede ser el raíz de nuestro Virtual Host o un directorio interior a este. En AuthUserFile ponemos el fichero que guardará la información de usuarios y contraseñas que debería de estar en un directorio que no sea visitable desde nuestro Apache. Por último, en AuthName personalizamos el mensaje que aparecerá en la ventana del navegador que nos pedirá la contraseña.
+Para controlar el control de acceso, es decir, que usuarios tienen permiso para obtener el recurso utilizamos las siguientes directivas: AuthGroupFile, Require user, Require group.
+El fichero de contraseñas se genera mediante la utilidad htpasswd.
+
+Crea cuatro usuarios de apache: pepe, maria, juan, ana.
+Crea un directorio llamado privado1 en un host virtual, que permita el acceso a todos los usuarios.
+Crea un directorio llamado privado2 en el host virtual creado anteriormente, que permita el acceso sólo a juan y a ana.
+Crea dos grupos de usuarios: grupo1 (pepe,maria), grupo2 (juan,ana).
+Crea un directorio llamado privado3 en el mismo host virtual, que permita el acceso sólo los usuarios del grupo1.
+Captura con WireShark el paquete donde se envía el usuario y contraseña. Podrías obtener la contraseña?
