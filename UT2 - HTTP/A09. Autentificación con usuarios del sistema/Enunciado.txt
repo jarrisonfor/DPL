@@ -1,0 +1,6 @@
+Actividad 8. Autentificación con usuarios del sistema
+
+Otro método es usar los usuarios del sistema para la autenticación, para ello vamos a usar el mod_authnz_external que es un módulo de Apache que permite autenticar los usuarios contra servicios externos: nosotros vamos a usar pwauth que permite verificar usuarios y contraseñas del sistema.
+
+Crea un subdirectorios en el host virtual que se llamen locales. Configura el directorios para que sólo puedan acceder los usuarios del sistema.
+Captura con WireShark el paquete donde se envía el usuario y contraseña. Podrías obtener la contraseña?
