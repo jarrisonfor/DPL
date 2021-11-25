@@ -1,0 +1,9 @@
+Actividad 10. Autentificación con MySQL
+
+Utilizando el módulo mod-authn-dbd y módulo mod-authz-dbd  configura un sitio virtual cuyo acceso sea autentificado mediante usuarios guardados en un tabla MySQL. Nota: las contraseñas de los usuarios se deben guardar cifradas en sha.
+
+Notas:
+
+No instales phpmyadmin para gestionar la base de datos que necesitas.
+
+Debes instalar la librería libaprutil1-dbd-mysql para que detecte el driver de mysql.
