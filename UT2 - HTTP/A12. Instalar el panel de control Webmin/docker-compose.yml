@@ -6,6 +6,10 @@ services:
             context: ./
             dockerfile: Dockerfile
         image: http
+        volumes:
+            - './www:/var/www/'
+            - './apache2:/etc/apache2'
+            - './extraFiles:/extraFiles'
         ports:
             - '80:80'
             - '10000:10000'

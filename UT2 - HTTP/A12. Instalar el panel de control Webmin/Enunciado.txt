@@ -4,8 +4,13 @@ Actividades a realizar:
 Configura un servidor web seguro:
 Activa el firewall y sólo permite el acceso a los servicios necesarios.
 Elimina los servidores web instalados (Apache/NGinx/LightHTTP)
+
 Instala el Apache y comprueba que funciona correctamente.
+
 Instala el panel de control webmin.
+
 Chequear que se puede acceder al Apache y al Webmin desde un equipo distinto al servidor.
+
 Desde el webmin configura un virtualhost que que responda a www.asir.com (o asir.com) y cargue por defecto el fichero inicio.html y muestre una web el nombre del dominio, cualquier otra forma de acceder al servidor debe mostrar un error.
+
 Debes indicarme cuando lo tengas terminado para probarlo. Entrega capturas de todos los puntos.
