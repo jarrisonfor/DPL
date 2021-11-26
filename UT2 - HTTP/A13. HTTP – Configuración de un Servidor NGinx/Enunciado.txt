@@ -1,0 +1,14 @@
+Si no está instalado, instala el servidor de Nginx
+Establece como nombre de servidor www.nombreapellido.com y nombreapellido.com. No uses ni tildes ni eñes. Modifica en Ubuntu el fichero /etc/hosts para añadir este nombre, y en windows el fichero C:/windows/system32/etc/hosts
+Configura como directorio raíz para el servidor el directorio /var/www/nombreapellido.com
+Crea un alias para que al acceder al directorio http://www.nombreapellido.com/directorio1 se acceda al directorio ~/prueba1 (~ es el directorio de usuario actual)
+Establece como puerto por defecto el 81, comprueba que funciona accediendo a alguna página y vuelve a dejarlo en el 80.
+Establece como fichero por defecto juan.php y juan.html
+Establece /var/log/Nginx/errores.log como fichero logs de errores
+Establece /var/log/Nginx/accesos.log como fichero logs de accesos.
+Se deben mostrar índices automáticos
+Al producirse un error 404 (Documento no encontrado) mostrar una página personalizada que indique que el documento no se ha encontrado. La página deberá contener al menos una imagen.
+En el directorio /var/www/prueba/descargas si se permite generar índices y enlaces simbólicos
+Prohíbe el acceso al directorio descargas desde una determinada IP
+Habilita la autenticación básica para la carpeta /var/www/nombreapellido/privado de tu servidor.
+Crea dos host virtuales host1.nombreapellido.com y host2.nombreapellido.com. Los ficheros logs de errores serán /var/log/Nginx/hostN_errores.log (N será 1 y 2). Los ficheros logs de accesos serán /var/log/Nginx/hostN_accesos.log. Como fichero por defecto establecer indexN.html e indexN.php. En ambos mostrar índices de directorios. Añade estos nombres a los ficheros hosts de windows y ubuntu.
