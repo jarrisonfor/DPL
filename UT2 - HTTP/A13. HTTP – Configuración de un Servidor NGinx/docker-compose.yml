@@ -1,0 +1,17 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+    http:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: http
+        volumes:
+            - './www:/var/www/'
+            - './nginx:/etc/nginx'
+            - './extraFiles:/extraFiles'
+        ports:
+            - '80:80'
+            - '81:81'
+        environment:
+            TZ: 'Atlantic/Canary'
