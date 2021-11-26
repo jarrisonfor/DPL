@@ -1,0 +1,31 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+    http:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: http
+        volumes:
+            - './www:/var/www/'
+            - './nginx:/etc/nginx'
+            - './extraFiles:/extraFiles'
+        ports:
+            - '80:80'
+            - '443:443'
+            - '2222:22'
+        environment:
+            TZ: 'Atlantic/Canary'
+    mysql:
+        image: 'mysql:latest'
+        ports:
+            - '3306:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: 'csas1234'
+            MYSQL_DATABASE: 'http'
+            MYSQL_USER: 'yeray'
+            MYSQL_PASSWORD: 'csas1234'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+            TZ: 'Atlantic/Canary'
+        volumes:
+          - './extraFiles:/docker-entrypoint-initdb.d'
