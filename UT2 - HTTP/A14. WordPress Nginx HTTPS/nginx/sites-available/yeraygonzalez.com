@@ -21,10 +21,6 @@ server {
         deny all;
     }
     error_page 404 /404.html;
-    location = /custom_404.html {
-        root /usr/share/nginx/html;
-        internal;
-    }
 
 	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
