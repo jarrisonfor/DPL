@@ -19,5 +19,8 @@ RUN adduser --disabled-password --gecos '' yeray \
     && echo "yeray:csas1234" | chpasswd \
     && usermod -aG sudo yeray \
     && mkdir /home/yeray/web \
-    && echo "web" > /home/yeray/web/index.html \
-    && echo "web" > /home/yeray/web/juan.html \
+    && mkdir /home/yeray/prueba1 \
+    && echo "usuario userdir web" > /home/yeray/web/index.html \
+    && echo "usuario userdir web" > /home/yeray/web/juan.html \
+    && echo "prueba1 usuario actual" > /home/yeray/prueba1/index.html \
+    && echo "prueba1 usuario actual" > /home/yeray/prueba1/juan.html
