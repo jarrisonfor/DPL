@@ -1,0 +1,17 @@
+A04. Servidor WebDAV
+A04. Instalar servidor WebDAV
+WebDAV ("Edición y versionado distribuidos sobre la web") es un protocolo para hacer que la www sea un medio legible y editable. Este protocolo proporciona funcionalidades para crear, cambiar y mover documentos en un servidor remoto (típicamente un servidor web). Esto se utiliza sobre todo para permitir la edición de los documentos que sirve un servidor web, pero puede también aplicarse a sistemas de almacenamiento generales basados en web, que pueden ser accedidos desde cualquier lugar. La mayoría de los sistemas operativos modernos proporcionan soporte para WebDAV, haciendo que los ficheros de un servidor WebDAV aparezcan como almacenados en un directorio local.
+
+Instala y configura un servidor WebDAV:
+
+Instala y configura Apache para que responda al dominio tunombreyprimerapellido.com. Cualquier otra solicitud mostrará una página con la siguiente información: "Recurso no accesible."
+
+Configura para que  atienda únicamente peticiones HTTPS.
+
+Personaliza la página de inicio.
+
+Crea una carpeta en el DocumentRoot protegida con Digest (Usuarios de prueba pepe y pepa con las contraseña 1234).
+
+Habilitar WebDAV en esa carpeta.
+
+Conecta una unidad de red a la carpeta WebDAV en Linux o Windows y chequea que puedes subir y bajar archivos.
